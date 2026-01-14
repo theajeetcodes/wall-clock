@@ -1,67 +1,82 @@
-# Wall Clock 
+# Wall Clock
 
-This project is a **basic Clock application** built using **HTML, CSS, and JavaScript**.  
-It is being developed step-by-step while following a proper frontend learning approach.
+Live Demo: https://theajeetcodes.github.io/wall-clock/
 
-Currently, the HTML structure is complete, the basic CSS layout is implemented, and JavaScript logic will be added and improved gradually.
+This is a **basic Analog Wall Clock** project built using **HTML, CSS, and JavaScript**.  
+The project is created step-by-step to strengthen core frontend fundamentals and understand real-time DOM manipulation.
 
 ---
 
 ## Folder Structure
+
 wall-clock/  
 │-- index.html  
 │-- style.css  
 │-- script.js  
-│-- README.md  
-
 
 ---
 
 ## Project Overview
 
 ### index.html
-- Base HTML structure for the clock
-- Clock container and number elements
-- Clean and semantic HTML
-- Prepared for clock layout and functionality
+- Clock container and circular layout
+- Numbers (1–12) placed around the clock
+- Hour, minute, and second hands
+- Center dot for realistic clock design
+- Linked CSS and JavaScript files
 
 ### style.css
-- Styling for the clock UI
-- Basic layout and alignment
-- Circular clock design in progress
-- Will be improved step-by-step
+- Flexbox used to center the clock
+- Circular clock face styling
+- Numbers positioned using CSS transforms
+- Different sizes and colors for clock hands
+- Proper z-index layering
 
 ### script.js
-- JavaScript file prepared for functionality
-- Will handle real-time clock logic
-- Date and time handling (planned)
-- DOM manipulation for updating time (planned)
+- Elements selected using `document.querySelector`
+- Real-time time fetched using `Date()`
+- Time converted into rotation degrees
+- Clock updates every second using `setInterval`
 
 ---
 
-## Purpose
-- Practice real-world frontend project structure
-- Strengthen HTML, CSS, and JavaScript fundamentals
-- Learn how a digital/analog clock works
-- Build confidence by completing projects step-by-step
-- Prepare for more advanced frontend projects
+## JavaScript Logic
+
+- Seconds rotate: `seconds × 6`
+- Minutes rotate: `minutes × 6`
+- Hours rotate smoothly using:
+  `(hours % 12) × 30 + (minutes × 0.5)`
+
+This ensures accurate and smooth clock movement.
+
+---
+
+## Purpose of This Project
+
+- Practice HTML, CSS, and JavaScript together
+- Understand CSS transform & rotation
+- Learn real-time updates using JavaScript
+- Build confidence with hands-on projects
+- Prepare for frontend internships and portfolios
 
 ---
 
 ## Current Status
--  HTML structure completed
--  CSS file created and basic layout added
--  JavaScript logic in progress
--  Styling and functionality improvements ongoing
+
+- ✔ Clock face completed
+- ✔ Numbers aligned around the circle
+- ✔ Hour, minute, and second hands working
+- ✔ Real-time updates functional
+- ✔ Live project deployed using GitHub Pages
 
 ---
 
-## Next Steps
-- Improve clock design using CSS
-- Add hour, minute, and second hands
-- Implement real-time clock logic in JavaScript
-- Improve UI and responsiveness
-- Add enhancements and refinements
+## Future Improvements (Optional)
+
+- Smooth second-hand animation
+- Digital clock display
+- Dark / light theme toggle
+- Mobile responsiveness
 
 ---
 
@@ -70,5 +85,4 @@ wall-clock/
 **Ajeet Yadav**  
 Frontend Developer in Progress 🚀
 
-This project will be updated regularly as new concepts are learned and applied.
-
+This project will be updated as new frontend concepts are learned and applied.
