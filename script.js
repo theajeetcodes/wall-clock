@@ -1,6 +1,7 @@
 const handhour = document.querySelector(".hour");
 const handminute = document.querySelector(".minute");
 const handsecond = document.querySelector(".second");
+const moodBtn = document.querySelector(".mood-btn");
 
 function updateClock() {
     const now = new Date();
@@ -27,3 +28,13 @@ function updateClock() {
 
 updateClock();
 setInterval(updateClock, 1000);
+
+moodBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        moodBtn.textContent = "Light Mode";
+    } else {
+        moodBtn.textContent = ("Dark Mode")
+    }
+});

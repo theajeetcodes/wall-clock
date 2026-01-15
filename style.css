@@ -12,6 +12,7 @@ body {
     align-items: center;
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
+    position: relative
 }
 
 .clock {
@@ -83,4 +84,44 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+.mood-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body.dark {
+    background: #121212;
+}
+
+body.dark .clock {
+    background: #1e1e1e;
+    border-color: #fff;
+}
+
+body.dark .clock span span {
+    color: #fff;
+}
+
+body.dark .hour,
+body.dark .minute {
+    background: #fff;
+}
+
+body.dark .center-dot {
+    background: #fff;
+}
+
+body.dark .mood-btn {
+    background: #fff;
+    color: #000;
 }
